@@ -2,13 +2,17 @@
 Netease snail reading unlock vip
 
 QX:
-^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info\.json url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/wnyd.js
+^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info\.json url script-response-body https://raw.githubusercontent.com/sandyhery/Script/master/QuantumultX/File/wnyd.js
 
 Surge4：
-http-response ^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info\.json requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/wnyd.js
+http-response ^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info\.json requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/sandyhery/Script/master/QuantumultX/File/wnyd.js
 
 Surge & QX MITM = p.du.163.com
 */
+
+/**
+ * @supported 你的设备ID F4C597C9913A
+ */
 
 var body = $response.body;
 var obj = JSON.parse(body);
